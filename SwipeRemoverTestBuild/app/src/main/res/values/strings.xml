@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Swipe Remover Test Build</string>
+    <string name="but_keep">Keep media</string>
+    <string name="but_previous">Previous media</string>
+    <string name="but_del">Delete media</string>
+    <string name="but_undo">Undo deletion</string>
+    <string name="but_edit">Edit media</string>
+    <string name="but_show_info">Show media info</string>
+    <string name="but_settings">Show settings</string>
+    <string name="but_find">Search media</string>
+    <string name="img_main">Main image</string>
+
 </resources>

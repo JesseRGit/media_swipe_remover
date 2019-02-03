@@ -14,7 +14,10 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="16dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="90dp"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton_KeepMedia" android:layout_marginEnd="16dp"/>
+            app:layout_constraintEnd_toStartOf="@+id/imageButton_KeepMedia" android:layout_marginEnd="16dp"
+            android:contentDescription="@string/but_del"
+            android:background="@drawable/button_delete_media"
+            android:scaleType="centerCrop"/>
     <ImageButton
             android:layout_width="80sp"
             android:layout_height="80sp" app:srcCompat="@android:drawable/ic_media_next"
@@ -22,41 +25,49 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="16dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="90dp"
-            app:layout_constraintStart_toEndOf="@+id/imageButton_DeleteMedia" android:layout_marginStart="19dp"/>
+            app:layout_constraintStart_toEndOf="@+id/imageButton_DeleteMedia" android:layout_marginStart="19dp"
+            android:contentDescription="@string/but_keep"
+            android:background="@drawable/button_keep_media"
+            android:scaleType="fitCenter"/>
     <ImageButton
             android:layout_width="60sp"
             android:layout_height="60sp" app:srcCompat="@android:drawable/ic_menu_revert"
-            android:id="@+id/imageButton_RevertDeleteMedia"
+            android:id="@+id/imageButton_UndoDeleteMedia"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="16dp"
             android:layout_marginBottom="16dp"
-    />
+            android:contentDescription="@string/but_undo"
+            android:background="@drawable/button_undo" android:scaleType="fitCenter"/>
     <ImageView
             android:layout_width="0dp"
-            android:layout_height="0dp" tools:srcCompat="@tools:sample/avatars[11]"
+            tools:srcCompat="@tools:sample/avatars[11]"
             android:id="@+id/imageView_MainMedia"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="16dp" android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/imageButton_DeleteMedia"/>
+            android:contentDescription="@string/img_main"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:layout_height="0dp"
+            android:layout_marginBottom="16dp" app:layout_constraintBottom_toTopOf="@+id/imageButton_DeleteMedia"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent"/>
     <ImageButton
             android:layout_width="60sp"
             android:layout_height="60sp" app:srcCompat="@android:drawable/ic_menu_info_details"
             android:id="@+id/imageButton_ShowMediaInfo"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp"/>
+            android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:contentDescription="@string/but_show_info"
+            android:scaleType="fitCenter"/>
     <ImageButton
             android:layout_width="60sp"
             android:layout_height="60sp" app:srcCompat="@android:drawable/ic_menu_edit"
             android:id="@+id/imageButton_EditMedia"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"/>
+            android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:contentDescription="@string/but_edit" android:scaleType="fitCenter"/>
     <ImageButton
             android:layout_width="60sp"
             android:layout_height="60sp" app:srcCompat="@android:drawable/ic_media_previous"
             android:id="@+id/imageButton_PreviousMedia"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="14dp"
-            app:layout_constraintBottom_toTopOf="@+id/imageButton_DeleteMedia" android:layout_marginBottom="16dp"/>
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton_DeleteMedia"
+            android:layout_marginBottom="16dp" android:contentDescription="@string/but_previous"
+            android:scaleType="fitCenter"/>
 </android.support.constraint.ConstraintLayout>
