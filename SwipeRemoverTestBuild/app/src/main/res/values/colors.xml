@@ -3,11 +3,14 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="redIndian">#CD5C5C</color>
     <color name="redCrimson">#DC143C</color>
-    <color name="redFirebrick">#B22222</color>
-    <color name="greenLime">#32CD32</color>
-    <color name="greenForest">#228B22</color>
-    <color name="orange">#FFA500</color>
-    <color name="darkOrange">#FF8C00</color>
-    <color name="greyUnpressable">#A9A9A9</color>
+    <color name="greenMediumSea">#3CB371</color>
+    <color name="greenSea">#2E8B57</color>
+    <color name="orangeCoral">#FF7F50</color>
+    <color name="orangeTomato">#FF6347</color>
+    <color name="greyDim">#696969</color>
+    <color name="greyDark">#A9A9A9</color>
+    <color name="black">#000000</color>
+    <color name="blackAlpha">#40000000</color>
 </resources>
