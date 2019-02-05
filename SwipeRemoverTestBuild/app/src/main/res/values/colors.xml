@@ -3,8 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="redDelete">#DC143C</color>
-    <color name="greenKeep">#32CD32</color>
-    <color name="orangeUndo">#FFA500</color>
+    <color name="redCrimson">#DC143C</color>
+    <color name="redFirebrick">#B22222</color>
+    <color name="greenLime">#32CD32</color>
+    <color name="greenForest">#228B22</color>
+    <color name="orange">#FFA500</color>
+    <color name="darkOrange">#FF8C00</color>
     <color name="greyUnpressable">#A9A9A9</color>
 </resources>
