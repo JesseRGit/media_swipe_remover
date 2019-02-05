@@ -9,26 +9,29 @@
 
     <ImageButton
         android:id="@+id/imageButton_DeleteMedia"
-        android:layout_width="90sp"
-        android:layout_height="90sp"
-        android:layout_marginStart="90dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_delete_media"
         android:contentDescription="@string/but_del"
         android:elevation="15dp"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton_KeepMedia"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_UndoDeleteMedia"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_MainMedia"
         app:srcCompat="@android:drawable/ic_menu_delete" />
 
     <ImageButton
         android:id="@+id/imageButton_KeepMedia"
-        android:layout_width="90sp"
-        android:layout_height="90sp"
-        android:layout_marginStart="19dp"
-        android:layout_marginEnd="90dp"
+        android:layout_width="80dp"
+        android:layout_height="80sp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="70dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_keep_media"
         android:contentDescription="@string/but_keep"
@@ -36,20 +39,21 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton_DeleteMedia"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_UndoDeleteMedia"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_MainMedia"
         app:srcCompat="@android:drawable/ic_media_next" />
 
     <ImageButton
         android:id="@+id/imageButton_UndoDeleteMedia"
         android:layout_width="60sp"
         android:layout_height="60sp"
-        android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_undo"
         android:contentDescription="@string/but_undo"
         android:elevation="15dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
@@ -99,10 +103,13 @@
         android:layout_width="60sp"
         android:layout_height="60sp"
         android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_previous_media"
         android:contentDescription="@string/but_previous"
+        android:elevation="15dp"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton_DeleteMedia"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_media_previous" />
+
 </android.support.constraint.ConstraintLayout>

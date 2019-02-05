@@ -13,4 +13,6 @@
     <color name="greyDark">#A9A9A9</color>
     <color name="black">#000000</color>
     <color name="blackAlpha">#40000000</color>
+    <color name="yellow">#FFFF99</color>
+    <color name="yellowDark">#CCCC00</color>
 </resources>
