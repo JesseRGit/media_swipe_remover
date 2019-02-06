@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -12,13 +13,13 @@
         android:layout_height="80sp"
         android:layout_marginStart="85dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/button_delete_media"
+        android:background="@drawable/button_round_white"
         android:contentDescription="@string/but_del"
         android:elevation="15dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
+        app:srcCompat="@drawable/delete_icon" />
 
     <ImageButton
         android:id="@+id/imageButton_KeepMedia"
@@ -26,13 +27,13 @@
         android:layout_height="80sp"
         android:layout_marginEnd="85dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/button_keep_media"
+        android:background="@drawable/button_round_white"
         android:contentDescription="@string/but_keep"
         android:elevation="15dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_media_next" />
+        app:srcCompat="@drawable/keep_icon" />
 
     <ImageButton
         android:id="@+id/imageButton_UndoDeleteMedia"
@@ -41,14 +42,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/button_undo"
+        android:background="@drawable/button_round_white"
         android:contentDescription="@string/but_undo"
         android:elevation="15dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton_DeleteMedia"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_revert" />
+        app:srcCompat="@drawable/undo_icon" />
 
     <ImageView
         android:id="@+id/imageView_MainMedia"
@@ -57,10 +58,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/shadow_rect"
         android:contentDescription="@string/img_main"
         android:scaleType="fitXY"
+        android:elevation="2dp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton_DeleteMedia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -99,7 +101,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/button_previous_media"
+        android:background="@drawable/button_round_white"
         android:contentDescription="@string/but_previous"
         android:elevation="15dp"
         android:scaleType="fitCenter"
@@ -107,6 +109,6 @@
         app:layout_constraintEnd_toStartOf="@+id/imageButton_KeepMedia"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton_DeleteMedia"
-        app:srcCompat="@android:drawable/ic_media_previous" />
+        app:srcCompat="@drawable/previous_icon" />
 
 </android.support.constraint.ConstraintLayout>

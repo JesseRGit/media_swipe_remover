@@ -3,12 +3,14 @@
     <size android:width="200dp"
         android:height="200dp"/>
     <gradient
-        android:startColor="@color/greenSea"
-        android:endColor="@color/greenMediumSea"
+        android:startColor="@android:color/darker_gray"
+        android:endColor="@color/greyGainsBoro"
         android:angle="90">
     </gradient>
 
+    <corners android:radius="20dip" />
+
     <stroke
-        android:width="4px"
-        android:color="@color/greenSea" />
+        android:width="1px"
+        android:color="@android:color/darker_gray" />
 </shape>

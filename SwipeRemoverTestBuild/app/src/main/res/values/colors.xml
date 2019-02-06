@@ -3,16 +3,5 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="redIndian">#CD5C5C</color>
-    <color name="redCrimson">#DC143C</color>
-    <color name="greenMediumSea">#3CB371</color>
-    <color name="greenSea">#2E8B57</color>
-    <color name="orangeCoral">#FF7F50</color>
-    <color name="orangeTomato">#FF6347</color>
-    <color name="greyDim">#696969</color>
-    <color name="greyDark">#A9A9A9</color>
-    <color name="black">#000000</color>
-    <color name="blackAlpha">#40000000</color>
-    <color name="yellow">#FFFFCC</color>
-    <color name="yellowDark">#CCCC00</color>
+    <color name="greyGainsBoro">#DCDCDC</color>
 </resources>
