@@ -2,45 +2,45 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/background_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_main"
     tools:context=".MainActivity">
 
     <ImageButton
         android:id="@+id/imageButton_DeleteMedia"
         android:layout_width="80sp"
         android:layout_height="80sp"
-        android:layout_marginStart="85dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_round_white"
         android:contentDescription="@string/but_del"
         android:elevation="15dp"
-        android:scaleType="fitCenter"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_PreviousMedia"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_UndoDeleteMedia"
         app:srcCompat="@drawable/delete_icon" />
 
     <ImageButton
         android:id="@+id/imageButton_KeepMedia"
         android:layout_width="80dp"
         android:layout_height="80sp"
-        android:layout_marginEnd="85dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_round_white"
         android:contentDescription="@string/but_keep"
         android:elevation="15dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_Fullscreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_PreviousMedia"
         app:srcCompat="@drawable/keep_icon" />
 
     <ImageButton
         android:id="@+id/imageButton_UndoDeleteMedia"
         android:layout_width="60sp"
         android:layout_height="60sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="10dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_round_white"
         android:contentDescription="@string/but_undo"
@@ -48,6 +48,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton_DeleteMedia"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/undo_icon" />
 
@@ -61,8 +62,8 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/shadow_rect"
         android:contentDescription="@string/img_main"
-        android:scaleType="fitXY"
         android:elevation="2dp"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toTopOf="@+id/imageButton_DeleteMedia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -98,8 +99,6 @@
         android:id="@+id/imageButton_PreviousMedia"
         android:layout_width="60sp"
         android:layout_height="60sp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_round_white"
         android:contentDescription="@string/but_previous"
@@ -110,5 +109,21 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton_DeleteMedia"
         app:srcCompat="@drawable/previous_icon" />
+
+    <ImageButton
+        android:id="@+id/imageButton_Fullscreen"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_round_white"
+
+        android:contentDescription="@string/but_fullscreen"
+        android:elevation="15dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_KeepMedia"
+        app:srcCompat="@drawable/fullscreen_icon" />
 
 </android.support.constraint.ConstraintLayout>

@@ -8,5 +8,6 @@
     <string name="but_show_info">Show media info</string>
     <string name="but_settings">Show settings</string>
     <string name="but_find">Search media</string>
+    <string name="but_fullscreen">Fullscreen</string>
     <string name="img_main">Main image</string>
 </resources>
