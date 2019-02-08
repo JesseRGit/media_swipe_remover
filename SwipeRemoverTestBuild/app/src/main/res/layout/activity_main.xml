@@ -14,7 +14,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_round_white"
         android:contentDescription="@string/but_del"
-        android:elevation="15dp"
+        android:elevation="5dp"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton_PreviousMedia"
@@ -29,7 +29,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_round_white"
         android:contentDescription="@string/but_keep"
-        android:elevation="15dp"
+        android:elevation="5dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton_Fullscreen"
@@ -44,7 +44,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_round_white"
         android:contentDescription="@string/but_undo"
-        android:elevation="15dp"
+        android:elevation="5dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton_DeleteMedia"
@@ -102,7 +102,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_round_white"
         android:contentDescription="@string/but_previous"
-        android:elevation="15dp"
+        android:elevation="5dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton_KeepMedia"
@@ -116,14 +116,21 @@
         android:layout_height="60sp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_round_white"
-
         android:contentDescription="@string/but_fullscreen"
-        android:elevation="15dp"
+        android:elevation="5dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton_KeepMedia"
         app:srcCompat="@drawable/fullscreen_icon" />
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
 
 </android.support.constraint.ConstraintLayout>
