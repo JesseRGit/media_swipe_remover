@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/app_bar_main"
+        tools:context=".MainActivity">
+
+    <ImageButton
+            android:id="@+id/imageButton_DeleteMedia"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_round_white"
+            android:contentDescription="@string/but_del"
+            android:elevation="5dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton_PreviousMedia"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageButton_UndoDeleteMedia"
+            app:srcCompat="@drawable/delete_icon" />
+
+    <ImageButton
+            android:id="@+id/imageButton_KeepMedia"
+            android:layout_width="80dp"
+            android:layout_height="80sp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_round_white"
+            android:contentDescription="@string/but_keep"
+            android:elevation="5dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton_Fullscreen"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageButton_PreviousMedia"
+            app:srcCompat="@drawable/keep_icon" />
+
+    <ImageButton
+            android:id="@+id/imageButton_UndoDeleteMedia"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_round_white"
+            android:contentDescription="@string/but_undo"
+            android:elevation="5dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton_DeleteMedia"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/undo_icon" />
+
+    <ImageView
+            android:id="@+id/imageView_MainMedia"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/shadow_rect"
+            android:contentDescription="@string/img_main"
+            android:elevation="2dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton_DeleteMedia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/image_background_template" />
+
+    <ImageButton
+            android:id="@+id/imageButton_ShowMediaInfo"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/but_show_info"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <ImageButton
+            android:id="@+id/imageButton_EditMedia"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/but_edit"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+            android:id="@+id/imageButton_PreviousMedia"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_round_white"
+            android:contentDescription="@string/but_previous"
+            android:elevation="5dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton_KeepMedia"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageButton_DeleteMedia"
+            app:srcCompat="@drawable/previous_icon" />
+
+    <ImageButton
+            android:id="@+id/imageButton_Fullscreen"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_round_white"
+            android:contentDescription="@string/but_fullscreen"
+            android:elevation="5dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageButton_KeepMedia"
+            app:srcCompat="@drawable/fullscreen_icon" />
+
+</android.support.constraint.ConstraintLayout>
