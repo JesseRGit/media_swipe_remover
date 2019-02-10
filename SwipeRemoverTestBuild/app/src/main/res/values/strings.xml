@@ -10,4 +10,13 @@
     <string name="but_find">Search media</string>
     <string name="but_fullscreen">Fullscreen</string>
     <string name="img_main">Main image</string>
+    <string name="nav_txt_header">Swipe Remover</string>
+    <string name="nav_txt_show_media">Show:</string>
+    <string name="nav_txt_pictures">Pictures</string>
+    <string name="nav_txt_videos">Videos</string>
+    <string name="nav_txt_gifs">GIFs</string>
+    <string name="nav_txt_show_from_folders">From Folders:</string>
+    <string name="nav_txt_show_from_folders_all">All</string>
+    <string name="nav_txt_deleted_media">Deleted Media</string>
+    <string name="nav_txt_show_deleted_media">Recently Deleted</string>
 </resources>

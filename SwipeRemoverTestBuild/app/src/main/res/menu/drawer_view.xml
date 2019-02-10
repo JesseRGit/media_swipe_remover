@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_first_layout"
-            android:title="first_layout" />
-        <item
-            android:id="@+id/nav_second_layout"
-            android:title="second_layout" />
-        <item
-            android:id="@+id/nav_third_layout"
-            android:title="third_layout" />
-    </group>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/nav_show_media"
+          android:title="@string/nav_txt_show_media"
+          android:visible="true" android:checkable="true">
+        <menu>
+            <group android:checkableBehavior="all" android:id="@+id/group_media_types"
+                   android:visible="true">
+
+                <item
+                        android:id="@+id/nav_pictures"
+                        android:icon="@drawable/ic_photo_library_black_24dp"
+                        android:title="@string/nav_txt_pictures"
+                        app:actionViewClass="android.widget.CheckBox"
+                        android:checkable="true"/>
+                <item
+                        android:id="@+id/nav_videos"
+                        android:icon="@drawable/ic_video_library_black_24dp"
+                        android:title="@string/nav_txt_videos"
+                        app:actionViewClass="android.widget.CheckBox"
+                        android:checkable="true"/>
+                <item
+                        android:id="@+id/nav_gifs"
+                        android:icon="@drawable/ic_gif_black_24dp"
+                        android:title="@string/nav_txt_gifs"
+                        app:actionViewClass="android.widget.CheckBox"
+                        android:checkable="true"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:id="@+id/nav_from_folders"
+          android:title="@string/nav_txt_show_from_folders" android:enabled="true" android:checkable="true">
+        <menu>
+            <group android:checkableBehavior="all" android:id="@+id/group_folders">
+                <item
+                        android:id="@+id/nav_all_folders"
+                        android:icon="@drawable/ic_folder_black_24dp"
+                        android:title="@string/nav_txt_show_from_folders_all"
+                        app:actionViewClass="android.widget.CheckBox"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:id="@+id/nav_deleted_media"
+          android:title="@string/nav_txt_deleted_media">
+        <menu>
+            <item
+                    android:id="@+id/nav_show_deleted_media"
+                    android:icon="@drawable/undo_icon"
+                    android:title="@string/nav_txt_show_deleted_media"/>
+        </menu>
+    </item>
+
 </menu>
