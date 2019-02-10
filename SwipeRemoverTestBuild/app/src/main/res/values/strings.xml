@@ -11,12 +11,21 @@
     <string name="but_fullscreen">Fullscreen</string>
     <string name="img_main">Main image</string>
     <string name="nav_txt_header">Swipe Remover</string>
-    <string name="nav_txt_show_media">Show:</string>
+    <string name="nav_txt_show_media">Show Media Types:</string>
     <string name="nav_txt_pictures">Pictures</string>
     <string name="nav_txt_videos">Videos</string>
     <string name="nav_txt_gifs">GIFs</string>
     <string name="nav_txt_show_from_folders">From Folders:</string>
     <string name="nav_txt_show_from_folders_all">All</string>
+    <string name="nav_txt_show_from_folders_select">Select Folders</string>
     <string name="nav_txt_deleted_media">Deleted Media</string>
-    <string name="nav_txt_show_deleted_media">Recently Deleted</string>
+    <string name="nav_txt_show_deleted_media">View Recently Deleted</string>
+    <string name="nav_txt_sort_by">Sort Media By</string>
+    <string name="nav_txt_sort_by_date">Date</string>
+    <string name="nav_txt_sort_by_name">Name</string>
+    <string name="nav_txt_sort_by_type">Type</string>
+    <string name="nav_txt_sort_by_size">Size</string>
+    <string name="nav_txt_sort_by_random">Shuffled Order</string>
+    <string name="nav_txt_all">All</string>
+    <string name="nav_txt_select">Custom</string>
 </resources>
