@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <item android:id="@+id/nav_media_settings" android:title="@string/nav_txt_media_settings" >
+        <menu>
+            <group>
+                <item android:id="@+id/nav_media_type"
+                      android:icon="@drawable/ic_photo_library"
+                      android:title="@string/nav_txt_select_media_types"/>
+
+                <item android:id="@+id/nav_folders"
+                      android:icon="@drawable/ic_folder"
+                      android:title="@string/nav_txt_select_folders"/>
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:id="@+id/nav_sorting_method"
+          android:icon="@drawable/ic_sort_black"
+          android:title="@string/nav_txt_select_sort_method"/>
+
+    <item android:id="@+id/nav_recently_deleted"
+          android:icon="@drawable/ic_delete"
+          android:title="@string/nav_txt_view_deleted_media"/>
+
+</menu>
