@@ -3,10 +3,15 @@ package com.example.mediaswiperemover
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
+import android.support.v4.view.PagerAdapter
+import android.support.v4.view.ViewPager
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -24,6 +29,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+
+        //viewPager testing
+        val viewPager = findViewById<View>(R.id.viewPager_MainMedia) as ViewPager
+        val adapter = ImagePagerAdapter()
+        viewPager.adapter = adapter
     }
 
     override fun onBackPressed() {
@@ -66,8 +76,39 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             }
         }
-
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
     }
+
+    //viewPager testing
+    private inner class ImagePagerAdapter : PagerAdapter() {
+        private val mImages =
+            intArrayOf(R.drawable.chiang_mai, R.drawable.himeji, R.drawable.petronas_twin_tower, R.drawable.ulm)
+
+        override fun getCount(): Int {
+            return mImages.size
+        }
+
+        override fun isViewFromObject(view: View, `object`: Any): Boolean {
+            return view === `object`
+        }
+
+        override fun instantiateItem(container: ViewGroup, position: Int): Any {
+            val context = this@MainActivity
+            val imageView = ImageView(context)
+            val padding = context.resources.getDimensionPixelSize(
+                R.dimen.padding_medium
+            )
+            imageView.setPadding(padding, padding, padding, padding)
+            imageView.scaleType = ImageView.ScaleType.CENTER_INSIDE
+            imageView.setImageResource(mImages[position])
+            container.addView(imageView, 0)
+            return imageView
+        }
+
+        override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
+            container.removeView(`object` as ImageView)
+        }
+    }
+
 }

@@ -9,8 +9,8 @@
         tools:showIn="@layout/app_bar_main"
         tools:context=".MainActivity">
 
-    <ImageView
-            android:id="@+id/imageView_MainMedia"
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager_MainMedia"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="8dp"
@@ -20,13 +20,12 @@
             android:background="@drawable/shadow_rect"
             android:contentDescription="@string/img_main"
             android:elevation="2dp"
-            android:scaleType="fitXY"
             app:layout_constraintBottom_toTopOf="@+id/imageButton_DeleteMedia"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@drawable/image_background_template" />
+    />
 
     <ImageButton
             android:id="@+id/imageButton_UndoDeleteMedia"
