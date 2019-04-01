@@ -14,6 +14,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
+import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -83,7 +84,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     //viewPager testing
     private inner class ImagePagerAdapter : PagerAdapter() {
         private val mImages =
-            intArrayOf(R.drawable.chiang_mai, R.drawable.himeji, R.drawable.petronas_twin_tower, R.drawable.ulm)
+            intArrayOf(
+                R.drawable.chiang_mai,
+                R.drawable.himeji,
+                R.drawable.petronas_twin_tower,
+                R.drawable.ulm,
+                R.drawable.test_pic1,
+                R.drawable.test_pic2,
+                R.drawable.test_pic3,
+                R.drawable.test_pic4,
+                R.drawable.test_pic5)
 
         override fun getCount(): Int {
             return mImages.size
@@ -96,11 +106,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         override fun instantiateItem(container: ViewGroup, position: Int): Any {
             val context = this@MainActivity
             val imageView = ImageView(context)
+
             val padding = context.resources.getDimensionPixelSize(
                 R.dimen.padding_medium
             )
+            //viewPager_MainMedia.setPadding(padding, padding, padding, padding)
             imageView.setPadding(padding, padding, padding, padding)
-            imageView.scaleType = ImageView.ScaleType.CENTER_INSIDE
+
+            imageView.scaleType = ImageView.ScaleType.FIT_CENTER
+
             imageView.setImageResource(mImages[position])
             container.addView(imageView, 0)
             return imageView

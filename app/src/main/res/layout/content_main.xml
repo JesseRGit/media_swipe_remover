@@ -9,6 +9,29 @@
         tools:showIn="@layout/app_bar_main"
         tools:context=".MainActivity">
 
+    <ImageButton
+            android:id="@+id/imageButton_ShowMediaInfo"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/but_show_info"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_info_details"/>
+
+    <ImageButton
+            android:id="@+id/imageButton_EditMedia"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/but_edit"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_edit"/>
     <android.support.v4.view.ViewPager
             android:id="@+id/viewPager_MainMedia"
             android:layout_width="0dp"
@@ -22,10 +45,10 @@
             android:elevation="2dp"
             app:layout_constraintBottom_toTopOf="@+id/imageButton_DeleteMedia"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-    />
+            app:layout_constraintVertical_bias="0.0"/>
 
     <ImageButton
             android:id="@+id/imageButton_UndoDeleteMedia"
@@ -84,18 +107,6 @@
             app:srcCompat="@drawable/fullscreen_icon" />
 
     <ImageButton
-            android:id="@+id/imageButton_ShowMediaInfo"
-            android:layout_width="60sp"
-            android:layout_height="60sp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@string/but_show_info"
-            android:scaleType="fitCenter"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/ic_menu_info_details" />
-
-    <ImageButton
             android:id="@+id/imageButton_PreviousMedia"
             android:layout_width="60sp"
             android:layout_height="60sp"
@@ -108,17 +119,5 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageButton_DeleteMedia"
             app:srcCompat="@drawable/previous_icon" />
-
-    <ImageButton
-            android:id="@+id/imageButton_EditMedia"
-            android:layout_width="60sp"
-            android:layout_height="60sp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:contentDescription="@string/but_edit"
-            android:scaleType="fitCenter"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/ic_menu_edit" />
 
 </android.support.constraint.ConstraintLayout>
