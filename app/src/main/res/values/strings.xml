@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Media Swipe Remover</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Media Swipe Remover</string>
+    <string name="nav_txt_header">Swipe Remover</string>
+    <string name="nav_txt_media_settings">Media Settings</string>
+    <string name="nav_txt_select_media_types">Media Types</string>
+    <string name="nav_txt_select_folders">Folders</string>
+    <string name="nav_txt_deleted_media">Deleted Media</string>
+    <string name="nav_txt_view_deleted_media">Recently Deleted</string>
+    <string name="nav_txt_select_sort_method">Sorting Method</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="but_keep">Keep Media</string>
+    <string name="but_previous">Previous Media</string>
+    <string name="but_del">Delete Media</string>
+    <string name="but_undo">Undo Deletion</string>
+    <string name="but_edit">Edit media</string>
+    <string name="but_show_info">Show Media Info</string>
+    <string name="but_settings">Show Settings</string>
+    <string name="but_find">Search Media</string>
+    <string name="but_fullscreen">Fullscreen</string>
+
+    <string name="img_main">Main image</string>
+</resources>
